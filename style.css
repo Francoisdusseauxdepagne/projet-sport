@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+}
+
+.navbar-brand{
+    width: 10%;
+}
+
+.container-fluid img{
+    width: 100%;
+}
+
+.d-flex{
+    gap: 30px;
+}
+
+.nav-item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.imagefond{
+    background-image: url(images/Photo-17-1024x576.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding: 150px;
+}
+
+
+
+.imagepresentation img{
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    font-size: 80px;
+}
+
+.presentation h2{
+    color:  rgb(106, 106, 106);
+    font-family: 'Lobster', sans-serif;
+    font-size: 60px;
+}
+
+.textAccroche{
+    text-align: justify;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.service h2{
+    padding-bottom: 5px;
+}
+
+.text-center{
+    font-family: 'Lobster', sans-serif;
+}
+
+.pt-4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.card{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow:  0px 0px 20px 10px #B3A596;
+}
+
+.pied-de-page{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    padding: 2%;
+    justify-content: space-evenly;
+    background-color: rgb(68, 68, 68);
+}
+
+.contact{
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.Liens{
+    width: 30%; 
+}
+
+.Liens img{
+    width: 70px;
+    padding: 2%;
+}
+
+.mt-4 img{
+    width: 150px;
+}
+
+.contact{
+    width: 40%;
+}
+
+.contact h4{
+    padding-bottom: 4%;
+}
+
+strong{
+    color: #B3A596;
+}
+
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.mentions{
+    text-align: center;
+}
+
+.main{
+    background-color: #D3D1C5;
+}
+
+@media screen and (max-width: 932px){
+    .imagefond{
+        padding-left:0;
+        padding-right: 0;
+        padding-top:10%;
+        padding-bottom: 10%;
+    }
+
+    .rounded-3>img{
+        padding-bottom: 10%;
+    }
+
+    .Liens img{
+        width: 50px;
+        padding: 2%;
+    }
+    
+    .mt-4 img{
+        width: 120px;
+    }
+}
+
+.imagefondDiete{
+    background-image: url(images/alimentation-saine.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding: 150px;
+}
+
+.imagefondCalcul{
+    background-image: url(images/TABLEAU-CALORIES.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding: 150px;
+}
+
+.imagefondAnatomie{
+    color: #6A6A6A;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.imagefondEntrainement{
+    background-image: url(images/homegym-inspirations-salle-musculation-materiel-atx.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding: 150px;
+}

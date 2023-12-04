@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Manrope:wght@200&family=Montserrat:wght@100;500&family=Pacifico&family=Roboto&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>RevealFit</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/3a55e55f-13af-416b-914d-850486967260.png"
+                    alt="logo d'un haltere"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" target="_blank" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Entrainement</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="PageEntrainement.html">Programmes</a></li>
+                            <li><a class="dropdown-item" href="PageAnatomie.html">Anatomie</a></li>
+                            <li><a class="dropdown-item" href="#">Coaching</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">nutrition</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pageDiete.html">Calculateur de calories &
+                                    Macronutriments</a></li>
+                            <li><a class="dropdown-item" href="pageDiete.html">Dietes personnalisées : Prise de masse /
+                                    Seche</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Complements alimentaires</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary me-3 " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Inscription
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Inscription</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">E-mail</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Mot de passe</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Prénom</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Nom</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">GO !</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    Connexion
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Connexion</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">E-mail</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Mot de passe</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">GO !</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="imagefond">
+        <h1 class="text-light">Bienvenue sur RevealFit</h1>
+    </div>
+    <section class="p-5 container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                <img class="w-100" src="images/concept.jpg" alt="image personne en effort">
+            </div>
+            <div class="col-lg-6 col-md-12 presentation border px-4  rounded-3 mt-md-5 mt-lg-0">
+                <h2 class="mb-3">Le concept sportif</h2>
+                <p class="textAccroche">Transformer votre corps, <strong>réinventer votre bien-être</strong>.
+
+                    Je crois en la puissance de la musculation pour créer des changements significatifs dans la vie
+                    quotidienne. Ma plateforme est bien plus qu'un simple site de fitness, c'est un compagnon dédié à
+                    votre
+                    parcours de transformation physique et mental</p>
+
+                <p class="textAccroche"><strong>Pourquoi ?</strong>
+
+                    Nous comprenons que chaque individu est unique, avec des objectifs et des aspirations spécifiques.
+                    C'est
+                    pourquoi je propose des programmes d'entraînement personnalisés, adaptés à votre niveau de fitness,
+                    vos
+                    préférences et vos objectifs.</p>
+
+                <!-- Explorez les différentes sections, posez vos questions, et rejoignez une communauté dévouée à l'excellence physique et mentale. Je pense que la musculation est bien plus qu'un simple exercice physique; c'est une démarche importante vers une vie plus saine et plus épanouissante. -->
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="box1">
+                        <h2 class="text-center">À Propos de Moi</h2>
+                        <p class="pt-4">Je suis passionné de musculation depuis 3 ans. Ma mission : partager mes
+                            connaissances en
+                            musculation et
+                            aider
+                            chacun à faire de la musculation un mode de vie. Explorez nos programmes personnalisés et
+                            rejoignez
+                            une
+                            communauté dédiée à la transformation physique et mentale.
+
+                            Rejoignez-moi dans cette aventure vers une vie plus saine et plus forte !</p>
+                    </div>
+                    <div class="rounded-3">
+                        <img src="images/street-2021-03.png" alt="photo de moi">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 p-0">
+                    <h2 class="text-center">Boostez votre Forme avec mes Services</h2>
+                    <div class="row display-flex">
+                        <div class="col-12 col-md-6">
+                            <div class="box py-4">
+                                <div class="card">
+                                    <img src="images/crossfit-2048x1365.jpg" class="card-img-top"
+                                        alt="image de poids de musculation">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Entrainement</h3>
+                                        <p class="card-text">Pour les niveaux (débutant, intermédiaire, avancé).
+                                            Programmes
+                                            d'entraînement
+                                            détaillés avec des descriptions d'exercices & vidéos démonstratives pour
+                                            chaque exercice</p>
+                                        <a href="PageEntrainement.html" class="btn btn-primary">C'est parti</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="box py-4">
+                                <div class="card">
+                                    <img src="images/meal-prep-pdm-1536x1024.avif" class="card-img-top"
+                                        alt="image de plat sain">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Nutrition</h3>
+                                        <p class="card-text">Plans alimentaires pour différents objectifs
+                                            Recettes saines et équilibrées adaptées aux sportifs.
+                                            Informations sur les compléments alimentaires recommandés</p>
+                                        <a href="pageDiete.html" class="btn btn-primary">C'est parti</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="box py-4">
+                                <div class="card">
+                                    <img src="images/augmenter-taux-testosterone-315x210-c-default.avif"
+                                        class="card-img-top" alt="image de plat sain">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Formation anatomie</h3>
+                                        <p class="card-text">Bienvenue dans la section de formation anatomique, où la
+                                            connaissance devient la clé de la performance. Comprendre le fonctionnement
+                                            de votre corps est essentiel pour maximiser les résultats de votre
+                                            entraînement et atteindre vos objectifs fitness</p>
+                                        <a href="PageAnatomie.html" class="btn btn-primary">C'est parti</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="box py-4">
+                                <div class="card">
+                                    <img src="images/le-collagen-2048x1366.jpg" class="card-img-top"
+                                        alt="image de plat sain">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Complements alimentaires</h3>
+                                        <p class="card-text">Bienvenue dans la section dédiée aux compléments
+                                            alimentaires, conçue pour vous aider à atteindre vos objectifs de
+                                            musculation de manière optimale. Je crois en l'importance de soutenir vos
+                                            efforts d'entraînement avec une nutrition adaptée</p>
+                                        <a href="#" class="btn btn-primary">C'est parti</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+    </section>
+    <section>
+        <footer>
+            <div class="pied-de-page">
+                <div class="Liens">
+                    <h4>Reseaux Sociaux</h4>
+                    <p><em>Venez me voir sur les réseaux</em></p>
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <img src="images/instagram-png-instagram-png-logo-1455-1024x1024-1.png" alt="logo instagram">
+                    </a>
+                    <a target="_blank" href="https://m.facebook.com/login/?locale=fr_FR">
+                        <img src="images/Facebook_f_logo_(2019).svg.webp" alt="logo facebook">
+                    </a>
+                    <div class="mt-4">
+                        <h4>Partenaire</h4>
+                        <p><em>Mon partenaire d'entraînement</em></p>
+                        <a target="_blank"
+                            href="https://www.prozis.com/fr/fr/?ot=GAFRSS&campaignid=18587106182&adgroupid=&keyword=&placement=&utm_source=PRZGAFR&gad_source=1&gclid=EAIaIQobChMIzLyV8fnmggMVMzwGAB38nAO0EAAYASAAEgLo1PD_BwE">
+                            <img src="images/prozis_logo_red.png" alt="logo prozis">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="contact">
+                    <h4>Contact</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputprenom" class="form-label">Prenom</label>
+                            <input type="text" class="form-control" id="inputprenom" aria-describedby="prenomHelp"
+                                required>
+                            <div id="emailHelp" class="form-text">Votre nom ne sera pas diffusé</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Adresse email</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                                required>
+                            <div id="emailHelp" class="form-text">Votre e-mail ne sera pas diffusé.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="commentaire">Commentaire</label>
+                            <textarea class="form-control" placeholder="Laissez-moi un commentaire !" id="commentaire"
+                                style="height: 80px"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">GO !</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mentions pt-3">
+                <a href="#">Politique de Confidentialité</a>
+                <a href="#">Mentions Légales</a>
+
+                <p>&copy; 2023 RevealFit - Tous droits réservés.</p>
+            </div>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
