@@ -48,7 +48,8 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="pageDiete.html">Calculateur de calories &
                                     Macronutriments</a></li>
-                            <li><a class="dropdown-item" href="pageDiete.html">Dietes personnalisées : Prise de masse / Seche</a>
+                            <li><a class="dropdown-item" href="pageDiete.html">Dietes personnalisées : Prise de masse /
+                                    Seche</a>
                             </li>
                             <li><a class="dropdown-item" href="pageDiete.html">Complements alimentaires</a></li>
                             <li>
@@ -141,7 +142,37 @@
     <div class="imagefondDiete">
         <h1 class="text-light">Salon de la Diete</h1>
     </div>
-    
+    <!-- creation table pour calorie -->
+    <div class="CalculateurKcal">
+        <h2>Calculateur de calories</h2>
+        <form action=""  id="form" onsubmit="event.preventDefault()">
+            <label for="Genre">Genre</label>
+            <select name="Genre" id="Genre" required>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select>
+
+            <label for="Level">Niveau d'activite</label>
+            <select name="Level" id="Level" required>
+                <option value="Sedentaire">Sedentaire</option>
+                <option value="Moderement">Moderament actif</option>
+                <option value="Actif">Actif</option>
+                <option value="Tres actif">Tres actif</option>
+            </select>
+
+            <label for="Age">Age</label>
+            <input type="number" name="Age" id="Age" required>
+
+            <label for="height">Taille (en cm)</label>
+            <input type="number" name="height" id="height" required>
+
+            <label for="weight">Kilos (en KG)</label>
+            <input type="number" name="weight" id="weight" required>
+
+            <button onclick="calculKcal()" id="button" class="btn btn-success w-25 mt-4 fw-bold fs-5">Calcul</button>
+        </form>
+        <div id="result"></div>
+    </div>
     <section>
         <footer>
             <div class="pied-de-page">
@@ -196,6 +227,7 @@
             </div>
         </footer>
     </section>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

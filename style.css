@@ -184,3 +184,44 @@ strong{
     background-attachment: fixed;
     padding: 150px;
 }
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.CalculateurKcal {
+    padding: 50px;
+}
+
+.CalculateurKcal>h2{
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label{
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid gray;
+}
+
+select{
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid gray;
+}
+
+#result{
+    color: green;
+    font-size: 25px;
+}
