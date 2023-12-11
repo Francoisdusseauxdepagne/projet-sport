@@ -379,13 +379,16 @@ select{
     }
   }
 
-.ProgPayants>img{
-    width: 35%;
-    border-radius: 5px;
+.clicpartie{
+    text-align: center;
+    padding-top: 40px;
     Animation-name : fade;
-    Animation-delay : 3s;
-    Animation-duration : 3s;
+    Animation-delay : 1s;
+    Animation-duration : 2s;
     Animation-iteration-count : infinite;
-      
-}
+    font-family: 'Montserrat', sans-serif;
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
 
+}
