@@ -89,10 +89,6 @@ h1{
     width: 20%;
 }
 
-.Liens{
-    width: 30%; 
-}
-
 .Liens img{
     width: 70px;
     padding: 2%;
@@ -106,8 +102,15 @@ h1{
     width: 40%;
 }
 
-.contact h4{
-    padding-bottom: 4%;
+.coordonnees{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.coordonnees>h4, .contact>h4{
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 strong{
@@ -189,7 +192,6 @@ strong{
 #form{
     display: flex;
     flex-direction: column;
-  
 }
 
 .CalculateurKcal {
@@ -352,11 +354,17 @@ select{
     font-weight: bold;
 }
 
+.ProgPayants>img{
+    width: 50%;
+    border-radius: 15px;
+}
+
 .ProgPayants{
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
 }
 
 .ProgPayants>p{
@@ -390,5 +398,4 @@ select{
     color: green;
     font-size: 25px;
     font-weight: bold;
-
 }
