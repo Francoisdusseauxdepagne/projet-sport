@@ -1,7 +1,9 @@
+/* body général */
 body{
     margin: 0;
 }
 
+/* haut de page, header */
 .navbar-brand{
     width: 10%;
 }
@@ -27,8 +29,6 @@ body{
     padding: 150px;
 }
 
-
-
 .imagepresentation img{
     border-radius: 10px;
 }
@@ -39,6 +39,7 @@ h1{
     font-size: 80px;
 }
 
+/* text accroche */
 .presentation h2{
     color:  rgb(106, 106, 106);
     font-family: 'Lobster', sans-serif;
@@ -188,16 +189,24 @@ strong{
 #form{
     display: flex;
     flex-direction: column;
-    width: 30%;
+  
 }
 
 .CalculateurKcal {
-    padding: 50px;
+    width: 100%;
+   
 }
 
-.CalculateurKcal>h2{
-    padding-bottom: 30px;
+.repas{
+    background-color: #D3D1C5;
+}
+
+.repas>h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
 }
 
 label{
@@ -222,6 +231,161 @@ select{
 }
 
 #result{
+    background-color: #D3D1C5;
     color: green;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: bold;
 }
+
+#button{
+    margin-bottom: 20px;
+}
+
+.grid-generale{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.box1, .box2, .box3, .box4{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.box1>p, .box2>p, .box3>p, .box4>p{
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px;
+}
+
+.box1>img, .box2>img, .box3>img, .box4>img{
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 58px;
+}
+
+.box1>img:hover, .box2>img:hover, .box3>img:hover, .box4>img:hover{
+    border: #198754 2px solid;
+}
+
+.box1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.box2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.box3{
+    grid-column: 3/4;
+    grid-row: 1/2;    
+}
+
+.box4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.bt{
+    color: white;
+    background-color: #198754;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.grid-generale2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.box5{
+    grid-column: 1/2;
+    grid-row: 1/2;    
+}
+
+.box5{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.box5>div>img, .box6>div>img{
+    border-radius: 20px;
+    width: 30%;
+}
+
+.box5>div, .box6>div {
+    text-align: center;
+}
+
+.box5, .box6{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Lipides, #Proteines, #Laitage, #Glucides, #legumes{
+    opacity:0;
+}
+
+#Lipides:hover, #Proteines:hover, #Laitage:hover, #Glucides:hover, #legumes:hover{
+      opacity:1;
+}
+  
+.VotreProgramme{
+    background-color: #D3D1C5;
+}
+
+#messages{
+    font-family: 'Montserrat', sans-serif;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ProgPayants{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProgPayants>p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.VotreProgramme>h2, .ProgPayants>h2{
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+@keyframes fade {
+    From {
+      Opacity : 1;
+    }
+    To {
+      Opacity : 0;
+    }
+  }
+
+.ProgPayants>img{
+    width: 35%;
+    border-radius: 5px;
+    Animation-name : fade;
+    Animation-delay : 3s;
+    Animation-duration : 3s;
+    Animation-iteration-count : infinite;
+      
+}
+
